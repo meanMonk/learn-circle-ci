@@ -11,7 +11,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
+          name: "Build Client"
           command: "echo Hello, Clients!"
   engineer-say-hello:
     docker:
@@ -19,7 +19,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
+          name: "Build Enginner"
           command: "echo Hello, Engineer!"
   accounts-say-hello:
     docker:
@@ -27,7 +27,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
+          name: "Build Accounts"
           command: "echo Hello, Accounts!"
   marketing-say-hello:
     docker:
@@ -35,7 +35,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
+          name: "Build Marketing"
           command: "echo Hello, Marketing!"
 
 # Orchestrate jobs using workflows
